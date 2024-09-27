@@ -42,7 +42,7 @@ jobs:
       os: linux
       arch: arm64
       dist: focal
-      go: 1.23.0
+      go: 1.22.7
       git:
         submodules: false # avoid cloning ethereum/tests
       script:
@@ -54,7 +54,7 @@ jobs:
       os: linux
       arch: arm64
       dist: focal
-      go: 1.22.7
+      go: 1.22.x
       git:
         submodules: false # avoid cloning ethereum/tests
       script:
