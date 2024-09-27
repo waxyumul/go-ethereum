@@ -17,7 +17,7 @@ jobs:
       if: type = push
       os: linux
       arch: arm64
-      dist: jammy
+      dist: bionic
       go: 1.23.x
       git:
         submodules: false # avoid cloning ethereum/tests
@@ -29,7 +29,7 @@ jobs:
       if: type = push
       os: linux
       arch: arm64
-      dist: jammy
+      dist: bionic
       go: 1.23.1
       git:
         submodules: false # avoid cloning ethereum/tests
@@ -41,7 +41,7 @@ jobs:
       if: type = push
       os: linux
       arch: arm64
-      dist: jammy
+      dist: bionic
       go: 1.22.7
       git:
         submodules: false # avoid cloning ethereum/tests
@@ -53,7 +53,7 @@ jobs:
       if: type = push
       os: linux
       arch: arm64
-      dist: jammy
+      dist: bionic
       go: 1.22.x
       git:
         submodules: false # avoid cloning ethereum/tests
