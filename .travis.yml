@@ -1,5 +1,4 @@
 language: go
-dist: focal
 os: linux
 go_import_path: github.com/ethereum/go-ethereum
 jobs:
@@ -7,8 +6,9 @@ jobs:
     - stage: build
       if: type = push
       os: linux
-      go: 1.21.1
+      go: 1.22.1
       arch: arm64
+      dist: xenial
       git:
         submodules: false # avoid cloning ethereum/tests
       script:
@@ -20,7 +20,7 @@ jobs:
       os: linux
       go: 1.21.1
       arch: arm64
-      dist: focal
+      dist: xenial
       git:
         submodules: false # avoid cloning ethereum/tests
       script:
