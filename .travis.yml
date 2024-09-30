@@ -2,23 +2,25 @@ language: go
 go_import_path: github.com/ethereum/go-ethereum
 jobs:
   include:
+
     - stage: build
       if: type = push
       os: linux
-      arch: amd64
+      arch: arm64
       dist: focal
-      go: 1.23.x
+      go: 1.21.13
       git:
         submodules: false # avoid cloning ethereum/tests
       script:
+        - ls -la /Users/travis/gopath/bin/
         - go version
 
     - stage: build
       if: type = push
       os: linux
       arch: arm64
-      dist: bionic
-      go: 1.23.x
+      dist: focal
+      go: 1.21.x
       git:
         submodules: false # avoid cloning ethereum/tests
       script:
@@ -30,7 +32,7 @@ jobs:
       os: linux
       arch: arm64
       dist: bionic
-      go: 1.23.1
+      go: 1.21.13
       git:
         submodules: false # avoid cloning ethereum/tests
       script:
@@ -42,19 +44,7 @@ jobs:
       os: linux
       arch: arm64
       dist: bionic
-      go: 1.22.7
-      git:
-        submodules: false # avoid cloning ethereum/tests
-      script:
-        - ls -la /Users/travis/gopath/bin/
-        - go version
-
-    - stage: build
-      if: type = push
-      os: linux
-      arch: arm64
-      dist: bionic
-      go: 1.22.x
+      go: 1.21.x
       git:
         submodules: false # avoid cloning ethereum/tests
       script:
