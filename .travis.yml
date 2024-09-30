@@ -8,8 +8,6 @@ jobs:
       if: type = push
       os: linux
       arch: arm64
-      dist: focal
-      go: 1.21.13
       git:
         submodules: false # avoid cloning ethereum/tests
       script:
@@ -21,31 +19,6 @@ jobs:
       os: linux
       arch: arm64
       dist: focal
-      go: 1.21.x
-      git:
-        submodules: false # avoid cloning ethereum/tests
-      script:
-        - ls -la /Users/travis/gopath/bin/
-        - go version
-
-    - stage: build
-      if: type = push
-      os: linux
-      arch: arm64
-      dist: bionic
-      go: 1.21.13
-      git:
-        submodules: false # avoid cloning ethereum/tests
-      script:
-        - ls -la /Users/travis/gopath/bin/
-        - go version
-
-    - stage: build
-      if: type = push
-      os: linux
-      arch: arm64
-      dist: bionic
-      go: 1.21.x
       git:
         submodules: false # avoid cloning ethereum/tests
       script:
