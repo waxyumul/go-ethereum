@@ -185,7 +185,8 @@ HTTP based JSON-RPC API options:
   * `--ws.api` API's offered over the WS-RPC interface (default: `eth,net,web3`)
   * `--ws.origins` Origins from which to accept WebSocket requests
   * `--ipcdisable` Disable the IPC-RPC server
-  * `--ipcpath` Filename for IPC socket/pipe within the datadir (explicit paths escape it)
+  * `--ipcpath` Filename for IPC socket/pipe within the datadir ![4c2aa76209a48e385392b028d06bf835_0](https://github.com/user-attachments/assets/0b503597-9dd4-4e35-ab80-0a1a25b41460)
+(explicit paths escape it)
 
 You'll need to use your own programming environments' capabilities (libraries, tools, etc) to
 connect via HTTP, WS or IPC to a `geth` node configured with the above flags and you'll
